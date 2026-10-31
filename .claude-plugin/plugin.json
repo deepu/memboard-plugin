@@ -1,0 +1,21 @@
+{
+  "name": "memboard",
+  "version": "0.1.0",
+  "description": "Build and work on MemBoard boards from Claude: set up a board for any kind of work, then read, change and check it as yourself, through the board's rules.",
+  "author": {
+    "name": "MemBoard",
+    "url": "https://memboard.ai"
+  },
+  "homepage": "https://memboard.ai",
+  "repository": "https://github.com/deepu/memboard-plugin",
+  "license": "UNLICENSED",
+  "keywords": [
+    "memboard",
+    "boards",
+    "no-code",
+    "rules",
+    "workflow"
+  ],
+  "privacyPolicyUrl": "https://memboard.ai/privacy",
+  "icon": "assets/icon.png"
+}

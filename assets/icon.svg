@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <rect width="1024" height="1024" rx="224" fill="#FFFFFF"/>
+  <!-- a stack of pages, the shell's page mark: back to front, violet, amber, teal -->
+  <rect x="392" y="196" width="400" height="500" rx="40" fill="#F3EEFC" stroke="#6D28D9" stroke-width="30"/>
+  <rect x="312" y="276" width="400" height="500" rx="40" fill="#FBF3EC" stroke="#B45309" stroke-width="30"/>
+  <rect x="232" y="356" width="400" height="500" rx="40" fill="#E9F3F2" stroke="#0F766E" stroke-width="30"/>
+  <path d="M312 496h240M312 576h240M312 656h150" stroke="#0F766E" stroke-width="30" stroke-linecap="round"/>
+</svg>
