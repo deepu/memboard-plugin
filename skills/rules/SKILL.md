@@ -5,7 +5,7 @@ description: Write a board's rules with MemBoard - checks on a value (refuse or 
 
 # Rules
 
-A rule is a sentence in plain words plus one short SQL expression that checks it. MemBoard runs it the same way every time, on every change, whoever makes it: a person, a task or you. When a rule refuses, the person sees its plain words.
+A rule is a sentence in plain words plus one short SQL expression that checks it. MemBoard runs it the same way every time, on every change, whoever makes it: a person, an agent or you. When a rule refuses, the person sees its plain words.
 
 ## The four kinds
 
@@ -13,7 +13,7 @@ A rule is a sentence in plain words plus one short SQL expression that checks it
 |---|---|---|
 | On a value (`value`) | Checks a row whenever it changes. `refuse` stops the change; `ask` lets it through and puts a question on the card | "Systolic blood pressure is between 70 and 220" |
 | On a card (`page`) | Says which parts of a card show for this row | "Show the unblinding section only to unblinded staff" |
-| Must happen (`must`) | When its expression holds, a task starts, due `within` a time | "A serious adverse event is reported within 7 days" |
+| Must happen (`must`) | When its expression holds, an agent starts, due `within` a time | "A serious adverse event is reported within 7 days" |
 | Who may (`access`) | Grants read or write on a table, or says never | "Coordinators see only their own site's visits" |
 
 ## Writing the expression
@@ -36,7 +36,7 @@ A rule is a sentence in plain words plus one short SQL expression that checks it
 
 - `grant` read or write on a table to a role, optionally only on rows with a stamp (`site_code:104`), and for writes only on some columns (`cols`).
 - `never` beats any grant. Its `role` is who is exempt.
-- Putting a card on a page never grants anything. Only these lines do.
+- Showing a card never grants anything. Only these lines do.
 - Separation of duty is a state move plus Who may: the person who entered a row's role cannot make the move that checks it.
 - A role's scope (`site_code:101`) limits a person to their part of the data. One role can serve every site with `scope_by_person`.
 

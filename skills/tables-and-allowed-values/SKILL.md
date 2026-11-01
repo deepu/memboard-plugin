@@ -5,7 +5,7 @@ description: Design a board's tables (its Data) with MemBoard - columns, types, 
 
 # Tables and allowed values
 
-A board's Data is its tables. It is the only place with rows; pages show them as cards. Get the tables right and everything else is easy.
+A board's Data is its tables. It is the only place with rows; the board shows them as records and cards. Get the tables right and everything else is easy.
 
 ## One table per kind of thing
 
@@ -41,7 +41,7 @@ A table can have states, such as `entered` → `verified` → `signed_off`, writ
 
 - Each move says which role may make it. That is how "a coordinator never verifies their own data" is kept: only the monitor's role may move `entered` to `verified`.
 - A move back (reopen) is its own line, with its own role.
-- States are what pages tab on ("To verify", "Signed off"), so name them as the team says them.
+- States are what lists of work tab on ("To verify", "Signed off"), so name them as the team says them.
 
 ## Stamps: who sees which rows
 
