@@ -5,20 +5,20 @@ description: Plan a board's connectors on MemBoard - other systems (an EDC, a la
 
 # Connectors
 
-A connector is another system, such as Veeva, a lab, email or Slack. It is mapped onto the board's own tables, and gives tasks and chat tools to use it.
+A connector is another system, such as Veeva, a lab, email or Slack. It is mapped onto the board's own tables, and gives agents and chat tools to use it.
 
 ## How a connector fits
 
-- **It fills the board's tables, it doesn't replace them.** Pages, rules and Who may work the same whether a row came from a person or a connector.
+- **It fills the board's tables, it doesn't replace them.** Records, rules and Who may work the same whether a row came from a person or a connector.
 - **You propose the mapping:** which of the system's fields go to which columns, and how often it refreshes. The team says yes or no.
 - **When both sides change a value, the outside system wins.**
-- **Syncs run on a space account, not one person's login.** For a connector that is an MCP server, the board gives a memboard.ai link where someone signs in, and the board keeps that sign-in, so tasks can use it while nobody's AI is open. The sign-in is never shown to board code or to any AI.
+- **Syncs run on a space account, not one person's login.** For a connector that is an MCP server, the board gives a memboard.ai link where someone signs in, and the board keeps that sign-in, so agents can use it while nobody's AI is open. The sign-in is never shown to board code or to any AI.
 - **People outside MemBoard are reached through connectors** too: email, Slack, Teams. A notification is a Home item sent out.
 
 ## On MemBoard today
 
 - **In a proposal**, name each system in `connectors` with one line on what it would fill or send. Design the tables so that rows can be entered by hand until it is connected.
-- **Email and Slack** are a task step's `connector` (see the proposal format).
+- **Email and Slack** are a step's `connector` (see the proposal format).
 - **An outside MCP server** can fill a table once the board exists:
   1. `add_connector` with the server's address. Give the person the memboard.ai link it returns; they sign in to the server there. Never ask for a password or key in chat.
   2. `connector_tools` lists its tools; with `tool`, it calls one for a sample.

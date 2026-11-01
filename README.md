@@ -1,12 +1,12 @@
 # MemBoard for Claude
 
-Adds MemBoard to Claude: the MemBoard connector, which lets Claude work on your boards as you, and the skills that teach Claude to build a board well. MemBoard lets a team build the software it works in without programming: a board is a stack of pages over its own data, rules, tasks and skills, built and changed by talking to your AI, and kept with every version of every value.
+Adds MemBoard to Claude: the MemBoard connector, which lets Claude work on your boards as you, and the skills that teach Claude to build a board well. MemBoard lets a team build the software it works in without programming: a board is one area of work: its work as records, and the agents, data, connectors and rules that run it, built and changed by talking to your AI, and kept with every version of every value.
 
 | Part | What it is |
 |---|---|
 | [.claude-plugin/plugin.json](.claude-plugin/plugin.json) | The plugin's manifest |
 | [.mcp.json](.mcp.json) | The MemBoard connector at `https://memboard.ai/mcp`. Claude signs you in with your email and a one-time code the first time |
-| [skills/](skills) | setup-a-board, tables-and-allowed-values, rules, pages-and-cards, tasks, connectors, board-code, use-this-board-well |
+| [skills/](skills) | setup-a-board, tables-and-allowed-values, rules, cards, agents, connectors, board-code, use-this-board-well |
 
 ## What it runs, connects to and sends
 
